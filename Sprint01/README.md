@@ -48,6 +48,19 @@ arquivos desnecessários sejam desconsiderados?
 5. José foi promovido de seu cargo anterior e se tornou o novo Product Owner
 do time, quais são suas novas responsabilidades como PO?
 
+	R = 
+	
+		- Criar o Product Backlog, além de definir ordem e prioridade de desenvolvimento das funcionalidade e recursos contidos nele, ou
+	    	seja, responsável pelo escopo do produto.
+
+		-  Trazer uma visão clara ao Time Scrum sobre os itens do Product Backlog, garantindo   transparência e visibilidade.
+
+		-  Garantir valor no incremento está sendo construído pelo dev team.
+
+		- Assegurar que o time de desenvolvimento tenha pleno entendimento do ProductBacklog. 
+
+		- Supervisionar as etapas do desenvolvimento.
+
 6. Escreva um programa Java que tem como objetivo ser um quiz de
 perguntas e respostas. Na tela, você perguntará ao usuário e ele
 responderá. Se o usuário acertar ou errar, você precisa informar se ele
