@@ -14,7 +14,16 @@ cerimônias:
 
 2. Para que serve e como funciona o Framework Scrum?
 
+	R = O Scrum é um framework utilizado para gerenciamento de projetos complexos. Devido a seus príncipios de transparência, inspeção e adaptação, o Scrum torna os processos mais claros e simples tendo em vista o constante feedback da situação atual do projeto e da inspeção contínua  da equipe focando na meta e objetivo da Sprint. 
 
+	O Scrum é organizado em Sprint Planning, Sprints, Dailys, Sprint Review e Sprint Retropesctive. Sprint Planning onde é definido o que sera feito, o que será construído nas Sprints, que são ciclos de atividade que duram de 2 a 4 semanas na qual ao final devem produzir um incremento ao produto que está sendo construído. São realizadas as chamadas dailys, reuniões diárias de 15 minutos na qual a equipe responde 3 perguntas relacionadas ao andamento do projeto: O que foi feito desde a última reunião, o que será feito e se houveram impecílios para realização da tarefa.No final da Sprint, ocorre a Sprint Review onde é feita a análise do incremento que foi construído e adaptação do Product BackLog caso haja necessidade. Após a Sprint Review é feita a Sprint Retrospective que é uma analise do processo Scrum em si, é analisado o processo de desenvolvimento, a dinâmica e comunicação do time Scrum, fluxo de entregas, ambiente e ferramentas de trabalho, ou seja, diferente da Sprint Review que é focada no produto, a Retrospective é focado nas pessoas, nos relacionamentos. 
+
+	No Scrum há 3 papéis básicos: O Scrum Master, o Product Owner e o Dev Team.
+	O Scrum Master é um facilitador, ele é quem garante que a equipe esteja engajada com os valores & práticas do Scrum, detêm um papel importante garantindo que a equipe entenda e aplique de melhor forma o Scrum. 
+
+	O product Owner, dono do produto, responsável por conduzir o projeto de acordo com o desejo do cliente e demais stakeholders, ele detêm autonomia para definir e priorizar quais serão as funcionalidades que serão constrúidas, sendo assim ele é o unico responsável por gerenciar o Product Backlog  e transmitir para o time Scrum uma visão clara dos requisitos, prioridades e metas do projeto. 
+	Dev Team, o time de desenvolvimento é responsável pela construção do produto, sendo autogerenciável e decidindo como realizar o que foi especificado pelo PO no Product Backlog.
+	Também há os artefatos gerados pelos eventos do Scrum, O Product Backlog que reúne o os requisitos e funcionalidades necessárias ao produto; O Backlog da Sprint, que reúne as funcionalidades escolhidas do Backlog para serem constrúidas na Sprint, e por fim o Incremento que é a entrega parcial feita no final da Sprint.
 
 3. José iniciou sua jornada recentemente com git e não está conseguindo
 publicar seu arquivo README e a classe Product.js que acabou de criar. O
