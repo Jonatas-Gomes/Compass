@@ -28,12 +28,14 @@ cerimônias:
 3. José iniciou sua jornada recentemente com git e não está conseguindo
 publicar seu arquivo README e a classe Product.js que acabou de criar. O
 erro do git dá a seguinte informação:
+
 		Untracked Files:
 		README
 		Product.js
 Por que esse “erro” de “Untracked files” ocorreu e qual comando resolveria
 o problema?
-
+	
+	R = Isso ocorre quando há arquivos no repositório que não estão sendo monitorados pelo GIT. Para resolver isso, José deve executar o comando(sem aspas)  “git add READM”, depois “git add Product.js” ou ainda “git add .” Para que o git monitore as alterações feitas em ambos os arquivos.
 
 4. O time de desenvolvimento analisou e descobriu que o projeto está gerando
 arquivos pesados e desnecessários para serem commitados no repositório
