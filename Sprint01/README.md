@@ -42,6 +42,8 @@ arquivos pesados e desnecessários para serem commitados no repositório
 git. Em qual arquivo você deve incluir a lista de extensões para que esses
 arquivos desnecessários sejam desconsiderados?
 
+	R = Deve ser incluído no arquivo “.gitignore”, esse arquivo deve ser criado e dentro dele devem ser escritos os nomes dos arquivos que pretendemos fazer o git não rastrear.
+
 
 5. José foi promovido de seu cargo anterior e se tornou o novo Product Owner
 do time, quais são suas novas responsabilidades como PO?
