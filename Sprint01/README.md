@@ -1,12 +1,16 @@
 1. Baseado no Scrum Guide, qual o tempo máximo deveriam ter as seguintes
 cerimônias:
 	a. Daily:
+		A Daily é uma reunião realizada diariamente que ocorre em um tempo limite de 15 minutos. Nela são discutidas três tópicos: 1 -O que foi realizado desde a última daily, 2 - O que se pretende realizar até a próxima daily, 3 - Se houveram impeditivos em relação a execução da task.
 
 	b. Planning:
+		A Sprint Planning é uma reunião realizada para determinar o que será realizado na Sprint, a duração máxima é de até 8 horas para Sprint de um mês. Em Sprints mais curtas a duração geralmente é menor.
 
 	c. Review:
+		Na Sprint review é feita uma analise do incremento que foi adicionado ao produto, além da adptação do Product Backlog caso seja necessário. Ela é limitada a duração de 4 horas para sprints de um mês, podendo durar menos em sprints mais curtas.
 
 	d. Retrospectiva:
+		Enquanto a Sprint Review foca na análise do incremento que foi adicionado, a Sprint Retrospective será uma análise do processo Scrum em si, o processo de desenvolvimento, comunicação e dinâmica da equipe, fluxo de entregas, ambiente e ferramentas de trabalho. A duração máxima é de até 3 horas, mas em Sprints mais curtas o tempo de duração geralmente é menor.
 
 2. Para que serve e como funciona o Framework Scrum?
 
