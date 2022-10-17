@@ -178,3 +178,17 @@ Funcionário ABC
 • Salário: 700,00
 • Bônus: 140,00
 • Salário Líquido: 840,00
+
+
+   Fluxo de Execução: 
+
+   		1 - Usuário digita um número inteiro referente a quantidade de funcionários que serão cadastrados;
+   		
+   		2-  Usuário digita o nome do funcionário;
+
+   		3 - Usuario digita o salario do funcionario;
+
+   		4 - Os passos 2 e 3 são repetidos enquanto a quantidade de funcionários que serão cadastrados não seja atingida;
+
+   		5 - Ao fim, é apresentado ao usuário a lista do funcionários cadastrados, retornando nome, salario, bonus/desconto e salário liquido;
+
