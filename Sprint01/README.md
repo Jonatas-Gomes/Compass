@@ -72,6 +72,50 @@ Usuário XPTO:
 Acertos: 6
 Erros:4
 
+	Arrays chumbadas contendo perguntas, opcoes, e opções corretas
+
+
+	perguntas[0] = "Qual a capital do Canadá?: ";
+
+    opcoes[0] = ("1- Toronto\n2- Ottawa\n3- Amsterdã\n4- Brasília");
+    opcoesCorretas[0] = 2; // Resposta correta >> Ottawa
+
+    perguntas[1] = "Em que ano aconteceu a queda do Muro de Berlim?: ";
+
+    opcoes[1] = ("1- 1942\n2- 1979\n3- 1989\n4- 1985");
+    opcoesCorretas[1] = 3; // Resposta correta >> 1989 
+
+    perguntas[2] = "Qual destes abaixo é considerado o pai do Java? ";
+
+    opcoes[2] = ("1- Ryan Gosling \n2- Mark Hamill\n3- James Webb\n4- James Gosling");
+    opcoesCorretas[2] = 4; // Resposta correta >> James Gosling
+
+    perguntas[3] = "Qual o ano de criação do GITHUB? ";
+
+    opcoes[3] = "1- 2005\n2- 2003\n2- 2009\n3- 2008\n4- 2010";
+    opcoesCorretas[3] = 3; // Resposta correta >> 2008
+
+    perguntas[4] = "Em que ano faleceu o pianista e cantor Ray Charles?";
+
+    opcoes[4] = "1- 1995\n2- 2000\n3- 2004\n4-2008";
+    opcoesCorretas[4] = 3; // Resposta correta >> 2004
+
+    perguntas[5] = "Por quem e quando foi criado a ferramenta GIT";
+
+    opcoes[5] = "1- Gabe Newell - 2005\n2- Gordon Freeman - 1999\n3- Larry Tesler - 2004\n4- Linus Torvald - 2005";
+    opcoesCorretas[5] = 4; Resposta correta >> Linus Torvald
+
+
+	Fluxo de Execução: 
+		
+		1 - Usuário digita seu nome;
+		2 - Usuário digita um número inteiro de 1 a 4 correspondente a sua escolha dentre as opções apresentadas na tela;
+		3 - É retornado para o usário se acertou ou errou, além da opção correta;
+		4 - O segundo e terceiro passo é repetido, em um loop, outras 5 vezes, completando as 6 questões do quizz;
+		5 - Ao fim, é apresentado o nome do usuario e a quantidade de acertos e erros.
+
+		
+
 7. Escreva um programa em Java que tem como objetivo validar se um
 usuário e senha existem no sistema. Se o usuário e senha tiver corretos, o
 usuário deverá receber uma mensagem de acordo com o horário. (Utilizem
