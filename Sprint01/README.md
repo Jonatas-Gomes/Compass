@@ -131,6 +131,27 @@ você se logou ao nosso sistema.”
 • Se o usuário ou senha for inválidos, deverá exibir a mensagem:
 “Usuário e/ou senha incorretos.”
 
+	Array chumbadas para teste de execução do programa:
+
+	usuarios[0] = "Black";
+    senhas[0] = "Charizard123";
+
+    usuarios[1] = "Napoleon";
+    senhas[1] = "Myhorseisblack";
+
+    usuarios[2] = "Nefesus";
+    senhas[2] = "codelove";
+
+    usuarios[3] = "Ash";
+    senhas[3] ="pikachu123";
+
+
+	Fluxo de Execução: 
+
+		1 - Usuario digita um login; 
+		2 - usuario digita uma senha;
+		3 - É retornado para o usuário uma mensagem que explicite que a operação de login teve êxito ou não.
+
 
 8. Escreva um programa Java que tem como objetivo validar se um
 determinado funcionário tem direito a bonificação. O programa precisa
