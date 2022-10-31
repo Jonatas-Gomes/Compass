@@ -1,0 +1,7 @@
+CREATE DATABASE avaliacao_sprint2;
+USE avaliacao_sprint2;
+
+CREATE TABLE PRODUTO(ID INT PRIMARY KEY AUTO_INCREMENT, nome VARCHAR(50), descricao VARCHAR(50), 
+quantidade INT, preco DOUBLE);
+
+SELECT * FROM PRODUTO;
