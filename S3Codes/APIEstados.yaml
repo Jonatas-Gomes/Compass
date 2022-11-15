@@ -1,0 +1,260 @@
+openapi: 3.0.1
+info: 
+  title: API de Estados
+  description: Api para realizar consulta e cadastro de Estados brasileiros.
+  version: 1.0.0
+  termsOfService: htpps://google.com
+  contact:
+    name: Jonatas
+    email: jonatas.bezerra.pb@compasso.com.br
+externalDocs:
+  description: Doc API
+  url: https://github.com/Jonatas-Gomes/Compass
+
+
+servers:
+- url: http://localhost:8080/
+  description: servidor
+
+paths:
+  /api/states:
+  
+    get:
+      parameters:
+        - name: nomeRegiao
+          in: query
+          schema:
+            type: string
+          required: false
+          
+        - name: paginacao
+          in: query
+          schema:
+            type: object
+            properties:
+              page:
+                type: integer
+              size:
+                type: integer
+              sort: 
+                type: array
+                items:
+                  type: string
+          required: true
+                  
+                
+      summary: API Estados
+      responses: 
+        200:
+          $ref: '#/components/responses/Ret200v2'
+                    
+        400:
+          $ref: '#/components/responses/Ret400'
+    post:
+      summary: Cria novo estado
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EstadoForm'
+                
+                
+                
+      responses:
+        201:
+          $ref: '#/components/responses/Ret201'
+          
+        400:
+          $ref: '#/components/responses/Ret400'
+    
+  /api/states/{id}: 
+   parameters:
+     - name: id
+       in: path
+       schema:
+        type: integer
+       required: true
+   get:
+    summary: Detalhes sobre estado
+    responses:
+        200:
+          $ref: '#/components/responses/Ret200'
+        400:
+          $ref: '#/components/responses/Ret400'
+        404:
+          $ref: '#/components/responses/Ret404'
+   put:
+    summary: modifica um estado
+    requestBody:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AtualizaEstadoForm'
+    responses:
+      200:
+        $ref: '#/components/responses/Ret200'
+      400:
+        $ref: '#/components/responses/Ret400'
+      404:
+        $ref: '#/components/responses/Ret404'
+   delete:
+    summary: Excluí estado
+    responses:
+      200:
+        description: sucesso
+      404:
+        $ref: '#/components/responses/Ret404'
+  
+  /api/states/socioeconomics:
+    get:
+      parameters:
+        - name: paginacao
+          in: query
+          schema:
+            type: object
+            properties:
+              page:
+                type: integer
+              size:
+                type: integer
+              sort: 
+                type: array
+                items:
+                  type: string
+          required: true
+      summary: Estados e seus indicadores socio- econômicos
+      responses:
+        200:
+          $ref: '#/components/responses/Ret200'
+        400:
+          $ref: '#/components/responses/Ret400'
+          
+    
+      
+components:
+  schemas:
+    EstadoDto:
+      type: object
+      properties:
+         id:
+          type: integer
+         nome: 
+          type: string
+         capital: 
+          type: string
+         populacao: 
+          type: integer
+         area: 
+          type: integer
+         regiao:
+          type: string
+    EstadoSocioEconomicDto:
+      type: object
+      properties:
+        id:
+          type: integer
+        nome: 
+          type: string
+        capital:
+          type: string
+        nomeRegiao:
+          type: string
+        populacao:
+          type: integer
+        pib:
+          type: number
+        idh:
+          type: number
+        rendaPerCapita:
+          type: number
+        taxaDesemprego:
+          type: number
+        taxaDeMortalidadeInfantil:
+          type: number
+    ErroDeValidacaoDto:
+      type: object
+      properties:
+        nome:
+          type: string
+        campo:
+          type: string
+    AtualizaEstadoForm:
+      type: object
+      properties:
+        pib:
+          type: number
+        idh:
+          type: number
+        rendaPerCapita:
+          type: number
+        taxaDesemprego:
+          type: number
+        taxaDeMortalidadeInfatil:
+          type: number
+        populacao:
+          type: number
+    EstadoForm:
+      type: object
+      properties:
+        id:
+          type: integer
+        nome: 
+          type: string
+        capital:
+          type: string
+        nomeRegiao:
+          type: string
+        populacao:
+          type: integer
+        pib:
+          type: number
+        idh:
+          type: number
+        rendaPerCapita:
+          type: number
+        taxaDesemprego:
+          type: number
+        taxaDeMortalidadeInfantil:
+          type: number
+  
+  responses:
+      Ret200:
+        description: Sucesso
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EstadoSocioEconomicDto'
+      Ret400:
+        description: Bad Request
+        content: 
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ErroDeValidacaoDto'
+      Ret201:
+        description: Sucesso
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EstadoSocioEconomicDto'
+      Ret200v2:
+        description: Sucesso
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EstadoDto'
+      Ret404:
+        description: Not Found
+        
+            
+          
+        
+                    
+                  
+        
+        
+    
+      
+                  
+                  
+                
+      
